@@ -5,7 +5,6 @@ import NProgress from '@/components/NProgress';
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Tools from '@/components/Tools';
-import Confetti from '@/components/Confetti';
 import RouteChangeHandler from '@/components/RouteChangeHandler'
 
 import { getConfigDataAPI } from '@/api/project'
