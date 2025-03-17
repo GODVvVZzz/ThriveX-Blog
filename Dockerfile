@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # 运行 Next.js 服务器
-CMD ["npm", "start", "--", "-p", "3000"]
+CMD ["npm", "start"]
