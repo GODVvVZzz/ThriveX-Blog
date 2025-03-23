@@ -2,7 +2,10 @@
 FROM node:20-alpine
 
 # 设置工作目录
-WORKDIR /app
+WORKDIR /thrive
+
+# 配置 npm 镜像源
+RUN npm config set registry https://registry.npmmirror.com
 
 # 复制 package.json 和 package-lock.json（如果有），利用 Docker 缓存加速构建
 COPY package.json package-lock.json ./
