@@ -7,7 +7,7 @@ import { Theme } from '@/types/app/project'
 interface Props {
     src?: string, // 图片列表
     isRipple?: boolean, // 是否显示波浪
-    children?: ReactNode
+    children?: ReactNode // 子内容（会显示在背景图上）
 }
 
 export default async ({ src, isRipple = true, children }: Props) => {

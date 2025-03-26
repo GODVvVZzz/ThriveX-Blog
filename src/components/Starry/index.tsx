@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import './index.scss';
 
 const StarrySky = () => {
+    // 使用 useEffect 在组件挂载时创建星空效果
     useEffect(() => {
         /*星星的密集程度，数字越大越多*/
         const stars = 800;
@@ -14,6 +15,7 @@ const StarrySky = () => {
         for (let i = 0; i < stars; i++) {
             const star = document.createElement('div');
             star.classList.add('star_starrySky');
+            // 如果 starsContainer 不存在，会自动停止执行后续操作（不会执行 .appendChild）
             starsContainer?.appendChild(star);
         }
 
